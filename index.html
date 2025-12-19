@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación JHEFF Party</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- VIDEO DE FONDO -->
+  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="./assets/fondo.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <!-- OVERLAY PARA MEJOR LECTURA -->
+  <div class="video-overlay"></div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="wrap">
+    <section class="invite-story">
+
+      <!-- TÍTULO -->
+      <h1 class="title-story">
+        <span class="pool">JHEFF</span>
+        <span class="party">Party!</span>
+      </h1>
+
+      <!-- SUBTÍTULO -->
+      <p class="story-sub">
+        UNETE A MI PARA UNA<br />
+        FIESTA INCREIBLE!
+      </p>
+
+      <!-- FECHA -->
+      <div class="story-date" id="fecha">
+        SATURDAY, 20 MAY 2022 AT 6PM
+      </div>
+
+      <!-- UBICACIÓN + BOTÓN MAPS -->
+      <div class="location-box">
+        <div class="location-title">📍 Ubicación</div>
+        <div class="location-name">RIVAS CAMPING</div>
+
+        <a class="maps-btn" href="https://www.google.com/maps?q=-8.1727439,-78.9976734" target="_blank" rel="noopener">
+          Abrir en Maps
+        </a>
+
+      </div>
+
+      <!-- FRASE FINAL -->
+      <div class="story-footer">
+        It’s going to be wild!
+      </div>
+
+      <!-- BOTÓN -->
+      <div class="story-cta">
+        <a id="btnWhatsapp" class="btn primary"
+          href="https://wa.me/51954028946?text=Hola%20confirmo%20mi%20asistencia%20a%20la%20Pool%20Party%20🎉"
+          target="_blank" rel="noopener">
+          Confirmar por WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
