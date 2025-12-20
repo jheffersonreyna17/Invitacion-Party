@@ -1,7 +1,7 @@
 // ====== CONFIGURA AQUÍ ======
 const INVITACION = {
   nombreEvento: "Pool Party",
-  fechaTexto: "Sábado 20 de enero",
+  fechaTexto: "Sábado 20 de Diciembre",
   horaTexto: "5:00 p. m.",
   lugarTexto: "Casa de ______ (dirección)",
   dressTexto: "Ropa de baño / Casual",
@@ -61,3 +61,4 @@ END:VCALENDAR`;
   a.download="invitacion.ics";
   a.click();
 };
+
