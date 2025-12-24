@@ -1,94 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invitación JHEFF Party</title>
-
-  <!-- CSS -->
+  <title>Invitación END YEAR Party</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
   <!-- VIDEO DE FONDO -->
-  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto">
+  <video class="bg-video" autoplay muted loop playsinline>
     <source src="./assets/fondo.mp4" type="video/mp4" />
-    Tu navegador no soporta videos HTML5.
   </video>
 
-  <!-- OVERLAY PARA MEJOR LECTURA -->
+  <!-- OVERLAY -->
   <div class="video-overlay"></div>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- FUEGOS ARTIFICIALES -->
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <!-- CONTENIDO -->
   <main class="wrap">
     <section class="invite-story">
 
-      <!-- TÍTULO -->
       <h1 class="title-story">
-        <span class="pool">JHEFF</span>
+        <span class="pool">END YEAR</span>
         <span class="party">Party!</span>
       </h1>
 
-      <!-- SUBTÍTULO -->
       <p class="story-sub">
-        UNETE A MI PARA UNA<br />
-        FIESTA INCREIBLE!
+        CELEBREMOS JUNTOS EL<br>
+        CIERRE DE ESTE GRAN AÑO
       </p>
 
-      <!-- FECHA -->
-      <div class="story-date" id="fecha">
-        SATURDAY, 20
+      <div class="story-date">Viernes 26 de diciembre</div>
+
+      <!-- CONTADOR -->
+      <div class="countdown">
+        <div class="time-box"><span id="days">00</span><small>Días</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Horas</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>Min</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>Seg</small></div>
       </div>
 
-      <!-- HORARIO Y DRESS CODE -->
+      <!-- DETALLES -->
       <div class="story-details">
-
-        <div class="detail-item">
-          ⏰ <span>Hora:</span> 4:00 p. m.
-        </div>
-
-        <div class="detail-item">
-          👕 <span>Dress code:</span> Ropa de baño / Casual
-        </div>
-
+        <div class="detail-item">⏰ <span>Hora:</span> 3:00 p. m.</div>
+        <div class="detail-item">👕 <span>Dress code:</span> Ropa de baño / Casual</div>
       </div>
 
+      <div class="event-highlights">
+        <span class="highlight">🍾 Brindis</span>
+        <span class="highlight">🎶 Música</span>
+        <span class="highlight">🏖️ Piscina</span>
+        <span class="highlight">✨ Ambiente festivo</span>
+      </div>
 
-      <!-- UBICACIÓN + BOTÓN MAPS -->
+      <!-- UBICACIÓN -->
       <div class="location-box">
         <div class="location-title">📍 Ubicación</div>
         <div class="location-name">RIVAS CAMPING</div>
-
-        <a class="maps-btn" href="https://www.google.com/maps?q=-8.1727439,-78.9976734" target="_blank" rel="noopener">
+        <a class="maps-btn" href="https://www.google.com/maps?q=-8.1727439,-78.9976734" target="_blank">
           Abrir en Maps
         </a>
-
       </div>
 
-      <!-- FRASE FINAL -->
       <div class="story-footer">
-        It’s going to be wild!
+        Brindemos por lo vivido y lo que viene 🥂
       </div>
 
-      <!-- BOTÓN -->
+      <!-- WHATSAPP -->
       <div class="story-cta">
-        <a id="btnWhatsapp" class="btn primary"
-          href="https://wa.me/51954028946?text=Hola%20confirmo%20mi%20asistencia%20a%20la%20Pool%20Party%20🎉"
-          target="_blank" rel="noopener">
+        <a id="btnWhatsapp" class="btn primary" target="_blank">
           Confirmar por WhatsApp
         </a>
-
       </div>
 
     </section>
   </main>
 
-  <!-- JS -->
   <script src="./app.js"></script>
-
 </body>
-
 </html>
 
